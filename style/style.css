@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Parkinsans:wght@500&family=Playwrite+CL+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+:root {
+    --cor-fundo: #c56326;
+    --cor-btn: #F5853F;
+}
+
+body {
+   background-color: azure;
+}
+
+header {
+    width: 100%;
+    padding: 28px 8%;
+    background-color: rgb(100, 28, 28);
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo-navphone {
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+#listas {
+    display: flex;
+    list-style: none;
+    gap: 43px;
+}
+
+.lista-item a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.lista-item a:hover {
+    background-color: burlywood;
+    color: black;
+    border-radius: 15px;
+}
+
+#logo-store  {
+    color: white;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+#mobile-logo-bars {
+    display: none;
+}
+
+@media  screen and (max-width: 1050px) {
+    #mobile-logo-bars {
+        display: block;
+        color: white;
+        font-size: 1.25em;
+        cursor: pointer;
+    }
+
+    #logo-store, #listas {
+        display: none;
+    }
+}
+
+#full-content {
+    display: flex;
+    width: 100%;
+}
+
+.cta-principal {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    width: 50%;
+    gap: 30px;
+}
+
+#title {
+    font-size: 3em;
+}
+
+#title .title-cor {
+    color: brown;
+}
+
+.cta-principal p {
+    font-size: 1.2em;
+    color: #1d1d1d;
+    font-weight: 500;
+}
+
+.btn-principal {
+    background-color: brown;
+    text-decoration: none;
+    width: 40%;
+    padding: 20px 10px;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-principal:hover {
+    background-color: rgb(146, 36, 36);
+}
+
+.image {
+    display: flex;
+    width: 50%;
+    position: relative;
+    top: -20px;
+}
+
+@media  screen and (max-width: 1100px) {
+    .image {
+        display: none;
+    }
+
+    .cta-principal {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+hr {
+    width: 100%;
+    position: relative;
+    top: -30px;
+}
+
+.image-phone {
+    width: 150px;
+    height: 100px;
+}
+
+.content-second {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-second h2 {
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.content-second h2 span {
+    color: brown;
+    font-style: italic;
+}
+
+.fones {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 35px;
+    padding: 0px 20px;
+}
+
+
+.fone {
+    background-color: #F3D9B1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-radius: 20px;
+    width: 20%;
+    padding: 10px 0px 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.fone:hover {
+    background-color: rgb(185, 48, 48);
+}
+
+.fone p {
+    color: #1d1d1d;
+    font-weight: 450;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.fone p:hover {
+    color: white;
+}
+
+.preços {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.btn-comprar {
+    background-color: var(--cor-btn);
+    border: none;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-comprar:hover {
+    background-color: var(--cor-fundo);
+}
+
+.preços i {
+    background-color: var(--cor-btn);
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.preços i:hover {
+    background-color: var(--cor-fundo);
+}
+
+.fones {
+    margin-bottom: 50px;
+}
+
+@media  screen and (max-width: 1100px) {
+   .fones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }    
+
+   .fone {
+    width: calc(50% - 40px) ;
+   }
+
+}
+
+@media  screen and (max-width: 545px) {
+     .fone{
+        width: 100%;
+     }
+
+     #logo-navphone {
+        font-size: 1.2em;
+     }
+
+     #title {
+        font-size: 2.6em;
+     }
+
+     .content-second h2 {
+        font-size: 2em;
+     }
+
+     .btn-principal {
+        width: 50%;
+        font-size: 0.9em;
+    }
+}
+
+footer {
+    background-color: var(--cor-fundo);
+    text-align: center;
+    align-items: center;
+}
+
+footer p {
+   font-size: 0.8em;
+   padding: 5px;
+   cursor: pointer;
+}
+
+
